@@ -40,7 +40,7 @@ class Appointments extends Component {
 
   markAsStar = id => {
     this.setState(prevState => ({
-      appList: prevState.appList.map(each => {
+      apList: prevState.apList.map(each => {
         if (id === each.id) {
           return {...each, isFav: !each.isFav}
         }
@@ -51,7 +51,7 @@ class Appointments extends Component {
 
   getstaredapp = () => {
     this.setState(prevState => ({
-      appList: prevState.appList.filter(each => each.isFav === true),
+      apList: prevState.apList.filter(each => each.isFav === true),
     }))
   }
 
