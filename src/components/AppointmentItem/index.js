@@ -6,7 +6,7 @@ class AppointmentItem extends Component {
   render() {
     const {details, markAsStar} = this.props
     const {id, title, date, isFav} = details
-    const url = isFav
+    const urll = isFav
       ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
       : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
     const onstar = () => {
@@ -22,7 +22,7 @@ class AppointmentItem extends Component {
             onClick={onstar}
             data-testid="star"
           >
-            <img src={url} alt="star" />
+            <img src={urll} alt="star" />
           </button>
         </div>
         <p>{date}</p>
