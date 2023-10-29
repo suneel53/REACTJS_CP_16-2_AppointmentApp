@@ -1,0 +1,94 @@
+/* Write your CSS here */
+.bg-cont {
+  background-image: linear-gradient(to bottom, #fbc7d4, #9796f0);
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont {
+  background-color: white;
+  width: 80%;
+  padding: 30px;
+  border: 0px;
+  border-radius: 5px;
+}
+.form-cont {
+  display: flex;
+  justify-content: space-around;
+  height: 50%;
+}
+.form {
+  height: 60%;
+
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.input {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b5b7c4;
+}
+.date {
+  width: 300px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #b5b7c4;
+}
+.but {
+  background-color: #8b5cf6;
+  padding: 5px 15px 5px 15px;
+  border: 0px;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+.seperatot {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 2px solid #b5b7c4;
+}
+
+.appoitmenthed-cont {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.but-starred {
+  border: 1px solid #9897f0;
+  border-radius: 15px;
+  padding: 5px 10px 5px 10px;
+  color: #9897f0;
+  background-color: transparent;
+  cursor: pointer;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 45%;
+}
+@media (max-width: 767px) {
+  .form-cont {
+    height: 40%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  .formbeside-image {
+    display: none;
+  }
+}
