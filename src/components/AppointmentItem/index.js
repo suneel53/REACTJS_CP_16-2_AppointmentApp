@@ -1,11 +1,13 @@
 // Write your code here
 import {Component} from 'react'
+import {format} from 'date-fns'
 import './index.css'
 
 class AppointmentItem extends Component {
   render() {
     const {details, markAsStar} = this.props
     const {id, title, date, isFav} = details
+    const dd = format(new Date(date), 'dd MMMM yyyy, EEEE')
     const urll = isFav
       ? 'https://assets.ccbp.in/frontend/react-js/appointments-app/filled-star-img.png'
       : 'https://assets.ccbp.in/frontend/react-js/appointments-app/star-img.png'
@@ -25,7 +27,7 @@ class AppointmentItem extends Component {
             <img src={urll} alt="star" />
           </button>
         </div>
-        <p>{date}</p>
+        <p>{dd}</p>
       </li>
     )
   }
